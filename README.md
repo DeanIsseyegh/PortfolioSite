@@ -134,7 +134,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
     <div class="header__logo-container">
       <div class="header__logo-img-cont">
         <img
-          src="./assets/png/john-doe.png"
+          src="./assets/jpeg/dean.jpg"
           alt="Ram Maheshwari Logo Image"
           class="header__logo-img"
         />
