@@ -10,7 +10,7 @@ document.body.appendChild(script);
 
 let header = $(`
 <nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
-<a class="navbar-brand" href="index.html">John Doe </a>
+<a class="navbar-brand" href="index.html">Dean Isseyegh</a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
   <div id="js-hamburger" class="hamburger">
@@ -216,7 +216,7 @@ let footer = $(`
     </svg>
     </a>
 
-    <a class="social-button linkedin" href="" target="_blank" >
+    <a class="social-button linkedin" href="https://www.linkedin.com/in/dean-isseyegh-57a54074/" target="_blank" >
     <!-- svg code for linkedin icon -->
       <svg class="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8"
         stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
@@ -227,19 +227,7 @@ let footer = $(`
     </a>
 
 
-
-    <a class="social-button instagram" href="" target="_blank" >
-    <!-- svg code for instagram icon -->
-      <svg class="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5"
-        style="enable-background:new 0 0 202.5 202.5;">
-        <circle id="littleCircle" class="st0" cx="101" cy="101.5" r="18.9" />
-        <circle id="shutter" class="st0" cx="101" cy="101.5" r="8" />
-        <circle id="lens" class="st0" cx="125.5" cy="78.6" r="2.9" />
-        <path id="camera" class="st0" d="M79,60.5h44c10.5,0,19,8.5,19,19v44c0,10.5-8.5,19-19,19H79c-10.5,0-19-8.5-19-19v-44                                                                            C60,69,68.5,60.5,79,60.5z" />
-      </svg>
-    </a>
-
-    <a class="social-button github" href="#" target="_blank">
+    <a class="social-button github" href="https://github.com/DeanIsseyegh" target="_blank">
     <!-- SVG code for Github icon -->
     <svg class="github-icon-footer" width="45px" height="45px" viewBox="0 0 300 300">
         <!-- body -->
