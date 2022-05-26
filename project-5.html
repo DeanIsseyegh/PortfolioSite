@@ -111,9 +111,56 @@
                 <div class="project-details__desc">
                     <h3 class="project-details__content-title">Key Learnings</h3>
                     <p class="project-details__desc-para">
-                        Developed alongside the Unity learn programmer pathway. Not much to say. Planning to come back
-                        to this project to polish it up with new learnings and implement Object Pooling to improve performance
-                        and to import to Mobile.
+                        Developed alongside the Unity learn programmer pathway. The focus of this project was to learn
+                        the unity fundamentals and not worry about too much about code quality as I already had lots of
+                        software engineering experience.
+                        <br>
+                        Later revisited and ported + optimized.
+                    </p>
+                </div>
+
+                <div class="project-details__desc">
+                    <h3 class="project-details__content-title">Ported to Mobile</h3>
+
+                    <div class="project-details__showcase-img-cont">
+                        <img
+                                src="assets/png/roborush/ui-safe-area.png"
+                                alt="Project Image"
+                                class="project-details__showcase-img"
+                        />
+                    </div>
+
+                    <p class="project-details__desc-para">
+                        Later revisited the game and ported the game to Android and added in mobile controls. Used conditional compiler to implement
+                        specific mobile U.I and controls. Ensured U.I fit in safe area and was anchored properly.
+                    </p>
+                </div>
+
+                <div class="project-details__desc">
+                    <h3 class="project-details__content-title">Optimized</h3>
+
+
+                    <div class="project-details__showcase-img-cont">
+                        <img
+                                src="assets/png/roborush/performance-profiling.png"
+                                alt="Project Image"
+                                class="project-details__showcase-img"
+                        />
+                    </div>
+
+                    <p class="project-details__desc-para">
+                        Reduced lag spikes to ensure game runs at a smooth 60 fps on Android. Used the profiler to identify the two
+                        major problems. Learnt importance of profiling on target device and not personal PC.
+                        <br>
+                        <br>
+                        Noticed the physics collision detection was taking up a lot of CPU time for how basic the game was.
+                        The moving floor level was using a mesh collider. Replaced with a simple box collider to improve performance
+                        of collision detection.
+                        <br>
+                        <br>
+                        Used object pooling for the score popup text whenever an enemy or obstacle is destroyed. Interestingly it was
+                        the TextMeshPro objects that were spiking the performance more so than the enemies being instantiated/destroyed. Clear example
+                        why profiling is more important than guessing/assuming where a performance issue is!
                     </p>
                 </div>
 
