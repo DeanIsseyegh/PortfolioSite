@@ -102,7 +102,7 @@
         <div class="project-details__content">
             <div class="project-details__showcase-img-cont">
                 <img
-                        src="./assets/png/roborush/main.png"
+                        src="./assets/png/roborush/main_2.png"
                         alt="Project Image"
                         class="project-details__showcase-img"
                 />
@@ -157,10 +157,19 @@
                         The moving floor level was using a mesh collider. Replaced with a simple box collider to improve performance
                         of collision detection.
                         <br>
-                        <br>
-                        Used object pooling for the score popup text whenever an enemy or obstacle is destroyed. Interestingly it was
+                    </p>
+
+                    <div class="project-details__showcase-img-cont">
+                        <img
+                                src="assets/png/roborush/object-pooling.png"
+                                alt="Project Image"
+                                class="project-details__showcase-img"
+                        />
+                    </div>
+                    <p class="project-details__desc-para">
+                    Used object pooling for text popups and enemy spawning. Interestingly it was
                         the TextMeshPro objects that were spiking the performance more so than the enemies being instantiated/destroyed. Clear example
-                        why profiling is more important than guessing/assuming where a performance issue is!
+                        of why profiling is more important than guessing/assuming where a performance issue is!
                     </p>
                 </div>
 
