@@ -11,6 +11,8 @@
 
 html { scroll-padding-top: 9rem; }
 body { background: var(--surface); color: var(--text); }
+.skip-link { position: fixed; top: 1rem; left: 1rem; z-index: 1100; padding: 1rem 2rem; background: var(--accent); color: #10251e; font-size: 1.6rem; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
 ::selection { background: var(--accent); color: #101719; }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
   outline: 3px solid var(--accent);
@@ -140,7 +142,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   &__row-content-title { font-size: 2.6rem; line-height: 1.25; margin-bottom: 1.6rem; }
   &__row-content-desc { color: var(--muted); margin-bottom: 2.4rem; }
 }
-.project-label { color: var(--accent); font-size: 1.2rem; letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; margin-bottom: 1.2rem; }
+.project-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem; margin-bottom: 1.4rem; }
+.project-category { padding: .4rem 1rem; border: 1px solid #405750; background: #20312c; color: #c4d8d2; border-radius: .5rem; font-size: 1.2rem; font-weight: 600; }
+.project-label { color: var(--accent); font-size: 1.1rem; letter-spacing: 1.4px; text-transform: uppercase; font-weight: 700; }
+.project-contributions {
+  width: 100%;
+  padding: 1.6rem 0 0;
+  margin: -.6rem 0 2.4rem;
+  border-top: 1px solid var(--line);
+  h4 { color: var(--text); font-size: 1.5rem; font-weight: 600; margin-bottom: .8rem; }
+  p { color: var(--muted); font-size: 1.5rem; margin-bottom: .8rem; }
+  ul { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; }
+  li { color: #c4d8d2; font-size: 1.5rem; }
+  li::before { content: ''; display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); vertical-align: middle; margin-right: .7rem; }
+}
 .project-cs-hero__content { padding: 16rem 0 8rem; }
 .project-cs-hero__cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.6rem; }
 .project-details img { max-width: 100%; height: auto; }
@@ -156,6 +171,40 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .main-footer { background: #0d1416; border-top: 1px solid var(--line); }
 .main-footer__upper { padding: 4rem 0; }
+
+// Small, one-time entrances; no looping motion or hidden scroll content.
+@keyframes gentle-arrival {
+  from { opacity: .65; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero__eyebrow, .home-hero .heading-sec__main, .home-hero__info, .home-hero__cta {
+    animation: gentle-arrival .45s cubic-bezier(.2, .65, .3, 1) backwards;
+  }
+  .home-hero .heading-sec__main { animation-delay: .04s; }
+  .home-hero__info { animation-delay: .08s; }
+  .home-hero__cta { animation-delay: .12s; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .header__link {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 1rem;
+      left: 2rem;
+      right: 2rem;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .2s ease;
+    }
+    &:hover::after, &:focus-visible::after { transform: scaleX(1); }
+  }
+  .skills__skill { transition: transform .2s ease, border-color .2s ease; }
+  .skills__skill:hover { transform: translateY(-2px); border-color: #6b9b88; }
+}
 
 @media only screen and (max-width: 56.25em) {
   .header__content { padding: .8rem 2rem; }
@@ -178,4 +227,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
+  .skills__skill:hover { transform: none; }
 }

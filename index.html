@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dean Isseyegh</title>
-    <meta name="description" content="Game Dev Portfolio for Dean Isseyegh" />
+    <title>Dean Isseyegh | Gameplay Programmer</title>
+    <meta name="description" content="London-based gameplay programmer with over a decade of software engineering experience. Explore my commercial games, solo projects and game jams." />
 
-    <link rel="stylesheet" href="css/style.css?v=2" />
+    <meta name="theme-color" content="#101719" />
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" />
+    <link rel="canonical" href="https://deanthegamedev.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dean Isseyegh" />
+    <meta property="og:title" content="Dean Isseyegh | Gameplay Programmer" />
+    <meta property="og:description" content="London-based gameplay programmer with over a decade of software engineering experience. Explore my commercial games, solo projects and game jams." />
+    <meta property="og:url" content="https://deanthegamedev.com/" />
+    <meta property="og:image" content="https://deanthegamedev.com/assets/png/social-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dean Isseyegh — Gameplay Programmer. Commercial games, solo projects and game jams." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dean Isseyegh | Gameplay Programmer" />
+    <meta name="twitter:description" content="London-based gameplay programmer with over a decade of software engineering experience. Explore my commercial games, solo projects and game jams." />
+    <meta name="twitter:image" content="https://deanthegamedev.com/assets/png/social-preview.png" />
+
+    <link rel="stylesheet" href="css/style.css?v=4" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +34,7 @@
     />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
@@ -35,12 +53,12 @@
               <a href="./index.html" class="header__link"> Home </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">
                 Projects
               </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
@@ -68,11 +86,11 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./index.html#projects"> Projects </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./index.html#about"> About </a>
             </li>
 
             <li class="header__sm-menu-link">
@@ -82,10 +100,11 @@
         </div>
       </div>
     </header>
+    <main id="main-content">
     <section class="home-hero">
       <div class="home-hero__content">
         <p class="home-hero__eyebrow">Gameplay programmer <span aria-hidden="true">/</span> London</p>
-        <h1 class="heading-sec__main">Welcome</h1>
+        <h1 class="heading-sec__main">Dean Isseyegh</h1>
         <div class="home-hero__info">
           <p class="text-primary">
             I'm Dean Isseyegh, a gameplay programmer with over a decade of experience in software engineering. Big fan of Roguelikes, RTS games and Smash Bros (I consider that its own genre). Check out my portfolio below.
@@ -100,7 +119,7 @@
           <a href="https://www.linkedin.com/in/dean-Isseyegh-57a54074/" class="home-hero__social-icon-link">
             <img
               src="./assets/png/linkedin-ico.png"
-              alt="icon"
+              alt="LinkedIn"
               class="home-hero__social-icon"
             />
           </a>
@@ -109,7 +128,7 @@
           <a href="https://github.com/DeanIsseyegh" class="home-hero__social-icon-link">
             <img
               src="./assets/png/github-ico.png"
-              alt="icon"
+              alt="GitHub"
               class="home-hero__social-icon"
             />
           </a>
@@ -147,6 +166,229 @@
       </div>
       <div class="home-hero__mouse-scroll-cont">
         <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Check out my <strong><u><a href="https://github.com/DeanIsseyegh">GitHub</a></u></strong> and <strong><u><a href="https://deaniss.itch.io">Itch io</a></u></strong>, or have a look at the overview of my projects below:
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/prime-monster.jpg"
+                alt="Prime Monster title artwork"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Commercial</span><span class="project-label">Latest project</span></div>
+              <h3 class="projects__row-content-title">Prime Monster</h3>
+              <p class="projects__row-content-desc">
+                A card-based political roguelike set in a parliament of literal monsters. Fight for votes, weather scandals and push through absurd laws in this democratic dystopia. Developed in Unity/C#.
+              </p>
+              <div class="project-contributions">
+                <h4>What I worked on</h4>
+                <p>Worked across most areas of the game.</p>
+                <ul>
+                  <li>Save system</li>
+                  <li>UI</li>
+                  <li>Gameplay logic</li>
+                </ul>
+              </div>
+              <a
+                href="https://store.steampowered.com/app/3214480/Prime_Monster/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                rel="noreferrer"
+                >View on Steam</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                      src="./assets/png/ticket-to-ride/main.png"
+                      alt="Ticket to Ride gameplay"
+                      class="projects__row-img"
+                      loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Commercial</span></div>
+              <h3 class="projects__row-content-title">Ticket to Ride</h3>
+              <p class="projects__row-content-desc">
+                Adaptation of the classic board game Ticket to Ride. Built in Unity/C#.
+              </p>
+              <div class="project-contributions">
+                <h4>What I worked on</h4>
+                <ul>
+                  <li>Custom equipment system</li>
+                  <li>Mobile port</li>
+                </ul>
+              </div>
+              <a
+                      href="https://store.steampowered.com/app/2477010/Ticket_to_Ride/"
+                      class="btn btn--med btn--theme dynamicBgClr"
+                      target="_blank" rel="noreferrer"
+              >View on Steam</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/mouse-trap/main.png"
+                alt="Mouse Trap gameplay"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Commercial</span></div>
+              <h3 class="projects__row-content-title">Mouse Trap</h3>
+              <p class="projects__row-content-desc">
+                A turn-based digital 3d adaptation of the classic board game Mouse Trap. Built in Unity/C# and sold on multiple platforms.
+              </p>
+              <div class="project-contributions">
+                <h4>What I worked on</h4>
+                <ul>
+                  <li>Multiplayer system</li>
+                  <li>Meta-progress system</li>
+                  <li>Console ports</li>
+                </ul>
+              </div>
+              <a
+                href="https://www.marmaladegamestudio.com/games/mousetrap/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank" rel="noreferrer"
+                >Visit game website</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/dungeon-rogue/main.png"
+                alt="Rogue Dungeon gameplay"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Solo</span></div>
+              <h3 class="projects__row-content-title">Rogue Dungeon</h3>
+              <p class="projects__row-content-desc">
+                A Third Person Action RPG Roguelite with a focus on randomly generated dungeons, enemies and an extendable spell system with the use of Scriptable Objects. Built in Unity/C#.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Explore project</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/corgi/main.png"
+                alt="Corgi, protecc! gameplay"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Game Jam</span></div>
+              <h3 class="projects__row-content-title">Corgi, protecc!</h3>
+              <p class="projects__row-content-desc">
+                Developed in 72 hours for the Ludum Dare 50 Game Jam. Placed 219th out of ~2k submissions. Developed with a designer, composer and another programmer. A fast-paced top down shooter, with an upgrade system in place between waves to make your character stronger or repair your base.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Explore project</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/jumpnbonk/main3.png"
+                alt="Jump N'Bonk gameplay"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Solo</span></div>
+              <h3 class="projects__row-content-title">Jump N'Bonk</h3>
+              <p class="projects__row-content-desc">
+                A 2d platformer with a boss fight and relaxing atmosphere.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Explore project</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                      src="./assets/gif/lastonline/main.gif"
+                      alt="Last Online: 2734 Days Ago gameplay"
+                      class="projects__row-img"
+                      loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Game Jam</span></div>
+              <h3 class="projects__row-content-title">Last Online: 2734 Days Ago</h3>
+              <p class="projects__row-content-desc">
+                Developed in 48 hours during the Wholesome Game Jam. Developed with a designer, writer and another programmer.
+                A short game where you complete a couple of mini-games to create a legendary sword.
+                Features branching dialogue, a fishing mini-game and a combat trial.
+              </p>
+              <a
+                      href="./project-4.html"
+                      class="btn btn--med btn--theme dynamicBgClr"
+              >Explore project</a
+              >
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                      src="./assets/png/roborush/main_2.png"
+                      alt="Robo Rush gameplay"
+                      class="projects__row-img"
+                      loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <div class="project-meta"><span class="project-category">Solo</span></div>
+              <h3 class="projects__row-content-title">Robo Rush</h3>
+              <p class="projects__row-content-desc">
+                My first game developed in Unity. A 2d infinite side-scroller where you must destroy and dodge enemies
+                as the levels gets increasingly difficult.
+
+                Later revisited it and ported it to Android with mobile controls, and optimized via profiler usage.
+              </p>
+              <a
+                      href="./project-5.html"
+                      class="btn btn--med btn--theme dynamicBgClr"
+              >Explore project</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="about" class="about sec-pad">
@@ -201,203 +443,6 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Check out my <strong><u><a href="https://github.com/DeanIsseyegh">GitHub</a></u></strong> and <strong><u><a href="https://deaniss.itch.io">Itch io</a></u></strong>, or have a look at the overview of my projects below:
-          </span>
-        </h2>
-
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/prime-monster.jpg"
-                alt="Prime Monster title artwork"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <p class="project-label">Latest project</p>
-              <h3 class="projects__row-content-title">Prime Monster (Commercial Project)</h3>
-              <p class="projects__row-content-desc">
-                A card-based political roguelike set in a parliament of literal monsters. Fight for votes, weather scandals and push through absurd laws in this democratic dystopia. Developed in Unity/C#. Worked across most areas of the game, including the save system, UI and gameplay logic.
-              </p>
-              <a
-                href="https://store.steampowered.com/app/3214480/Prime_Monster/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                rel="noreferrer"
-                >See More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                      src="./assets/png/ticket-to-ride/main.png"
-                      alt="Software Screenshot"
-                      class="projects__row-img"
-                      loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Ticket to Ride (Commercial Project)</h3>
-              <p class="projects__row-content-desc">
-                Adaptation of the classic board game Ticket to Ride. Built in Unity/C#. Worked on implementing the custom equipment system and the mobile port.
-              </p>
-              <a
-                      href="https://store.steampowered.com/app/2477010/Ticket_to_Ride/"
-                      class="btn btn--med btn--theme dynamicBgClr"
-                      target="_blank"
-              >See More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/mouse-trap/main.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Mouse Trap (Commercial Project)</h3>
-              <p class="projects__row-content-desc">
-                A turn-based digital 3d adaptation of the classic board game Mouse Trap. Built in Unity/C# and sold on multiple platforms. Worked on the multiplayer system, meta-progress system and porting to all consoles.
-              </p>
-              <a
-                href="https://www.marmaladegamestudio.com/games/mousetrap/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >See More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/dungeon-rogue/main.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Rogue Dungeon (Solo Project)</h3>
-              <p class="projects__row-content-desc">
-                A Third Person Action RPG Roguelite with a focus on randomly generated dungeons, enemies and an extendable spell system with the use of Scriptable Objects. Built in Unity/C#.
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >See More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/corgi/main.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Corgi, protecc! (Game Jam)</h3>
-              <p class="projects__row-content-desc">
-                Developed in 72 hours for the Ludum Dare 50 Game Jam. Placed 219th out of ~2k submissions. Developed with a designer, composer and another programmer. A fast-paced top down shooter, with an upgrade system in place between waves to make your character stronger or repair your base.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >See More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/jumpnbonk/main3.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Jump N'Bonk (Solo Project)</h3>
-              <p class="projects__row-content-desc">
-                A 2d platformer with a boss fight and relaxing atmosphere.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >See More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                      src="./assets/gif/lastonline/main.gif"
-                      alt="Software Screenshot"
-                      class="projects__row-img"
-                      loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Last Online: 2734 Days Ago (Game Jam)</h3>
-              <p class="projects__row-content-desc">
-                Developed in 48 hours during the Wholesome Game Jam. Developed with a designer, writer and another programmer.
-                A short game where you complete a couple of mini-games to create a legendary sword.
-                Features branching dialogue, a fishing mini-game and a combat trial.
-              </p>
-              <a
-                      href="./project-4.html"
-                      class="btn btn--med btn--theme dynamicBgClr"
-                      target="_blank"
-              >See More</a
-              >
-            </div>
-          </div>
-
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                      src="./assets/png/roborush/main_2.png"
-                      alt="Software Screenshot"
-                      class="projects__row-img"
-                      loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Robo Rush (Solo Project)</h3>
-              <p class="projects__row-content-desc">
-                My first game developed in Unity. A 2d infinite side-scroller where you must destroy and dodge enemies
-                as the levels gets increasingly difficult.
-
-                Later revisited it and ported it to Android with mobile controls, and optimized via profiler usage.
-              </p>
-              <a
-                      href="./project-5.html"
-                      class="btn btn--med btn--theme dynamicBgClr"
-                      target="_blank"
-              >See More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -408,7 +453,7 @@
                         <a
                                 href="https://www.linkedin.com/in/dean-Isseyegh-57a54074/"
                                 class="btn btn--med btn--theme dynamicBgClr"
-                                target="_blank"
+                                target="_blank" rel="noreferrer"
                         >LinkedIn</a>
 
           </span>
@@ -456,6 +501,7 @@
 <!--        </div>-->
       </div>
     </section>
+    </main>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -468,14 +514,14 @@
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="LinkedIn"
                 />
               </a>
               <a target="_blank" rel="noreferrer" href="https://github.com/DeanIsseyegh">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
-                  alt="icon"
+                  alt="GitHub"
                 />
               </a>
 <!--              <a target="_blank" rel="noreferrer" href="#">-->
@@ -510,13 +556,13 @@
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
 <!--        <div class="main-footer__lower">-->
 <!--          &copy; Copyright 2021. Made by-->
-<!--          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"-->
+<!--          <a rel="noreferrer" target="_blank" rel="noreferrer" href="https://rammaheshwari.com"-->
 <!--            >Dean Isseyegh</a-->
 <!--          >-->
 <!--        </div>-->
       </div>
     </footer>
 
-    <script src="./index.js?v=2"></script>
+    <script src="./index.js?v=4"></script>
   </body>
 </html>
