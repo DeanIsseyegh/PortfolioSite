@@ -13,6 +13,7 @@ hamMenuBtn.addEventListener('click', () => {
   } else {
     smallMenu.classList.add('header__sm-menu--active')
   }
+  hamMenuBtn.setAttribute('aria-expanded', String(smallMenu.classList.contains('header__sm-menu--active')))
   if (headerHamMenuBtn.classList.contains('d-none')) {
     headerHamMenuBtn.classList.remove('d-none')
     headerHamMenuCloseBtn.classList.add('d-none')
@@ -25,10 +26,21 @@ hamMenuBtn.addEventListener('click', () => {
 for (let i = 0; i < headerSmallMenuLinks.length; i++) {
   headerSmallMenuLinks[i].addEventListener('click', () => {
     smallMenu.classList.remove('header__sm-menu--active')
+    hamMenuBtn.setAttribute('aria-expanded', 'false')
     headerHamMenuBtn.classList.remove('d-none')
     headerHamMenuCloseBtn.classList.add('d-none')
   })
 }
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && smallMenu.classList.contains('header__sm-menu--active')) {
+    smallMenu.classList.remove('header__sm-menu--active')
+    hamMenuBtn.setAttribute('aria-expanded', 'false')
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+    hamMenuBtn.focus()
+  }
+})
 
 // ---
 const headerLogoConatiner = document.querySelector('.header__logo-container')
