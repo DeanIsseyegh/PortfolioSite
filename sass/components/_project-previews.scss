@@ -1,0 +1,65 @@
+.project-preview {
+  align-self: center;
+  width: 100%;
+  background: #0b1113;
+
+  &__stage { position: relative; aspect-ratio: 16 / 9; min-height: 200px; }
+  .projects__row-img, &__player {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s ease;
+  }
+  .projects__row-img { object-fit: contain; }
+  &:hover .projects__row-img { transform: none; }
+  &__player { opacity: 0; pointer-events: none; }
+  &__player > div { width: 100%; height: 100%; }
+  &__player video, &__player iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: contain;
+  }
+  &.is-playing .projects__row-img { opacity: 0; }
+  &.is-playing &__player { opacity: 1; }
+  &__bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .4rem 1rem;
+    padding: .6rem 1.2rem;
+    background: #13201c;
+    border-top: 1px solid var(--line);
+    font-size: 1.3rem;
+    a { padding: 1rem .2rem; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+  }
+  &__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    min-height: 44px;
+    padding: .6rem .2rem;
+    background: transparent;
+    color: var(--accent);
+    font-size: inherit;
+    font-weight: 600;
+    text-align: left;
+    &::before { content: ''; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 8px solid currentColor; }
+    &[aria-pressed='true']::before { width: 8px; height: 10px; border: 0; border-left: 3px solid currentColor; border-right: 3px solid currentColor; }
+    &[hidden] { display: none; }
+  }
+  &__error {
+    display: block;
+    color: var(--muted);
+    font-size: 1.3rem;
+    &:not(:empty) { padding: .8rem 1.2rem; border-top: 1px solid var(--line); }
+  }
+  :focus-visible { outline-offset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-preview .projects__row-img, .project-preview__player { transition: none; }
+}

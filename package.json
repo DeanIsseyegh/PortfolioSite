@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "node --test",
     "compile:scss": "sass --watch --no-source-map sass/main.scss:css/style.css",
     "prefix:css": "postcss css/style.css --use autoprefixer --no-map --replace",
     "compress:css": "sass --no-source-map --style=compressed sass/main.scss css/style.css",
-    "build": "npm run compress:css && npm run prefix:css"
+    "build": "npm run compress:css && npm run prefix:css && node scripts/copy-player-libraries.js"
   },
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@vimeo/player": "^2.30.4",
     "autoprefixer": "^10.3.1",
-    "sass": "^1.93.0",
-    "postcss-cli": "^8.3.1"
+    "hls.js": "^1.7.3",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.93.0"
   }
 }
