@@ -1,7 +1,8 @@
 {
-  "name": "dopefolio",
+  "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Dean Isseyegh's gameplay programming portfolio",
   "main": "index.js",
   "scripts": {
     "test": "node --test",
@@ -10,7 +11,7 @@
     "compress:css": "sass --no-source-map --style=compressed sass/main.scss css/style.css",
     "build": "npm run compress:css && npm run prefix:css && node scripts/copy-player-libraries.js"
   },
-  "author": "",
+  "author": "Dean Isseyegh",
   "license": "GPL-3.0",
   "devDependencies": {
     "@vimeo/player": "^2.30.4",

@@ -40,11 +40,10 @@
   }
 
   &__icon {
-    margin-right: 1rem;
-    width: 2.5rem;
-    &--mr-none {
-      margin-right: 0;
-    }
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
   }
 
   &__lower {

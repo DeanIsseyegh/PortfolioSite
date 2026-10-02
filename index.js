@@ -59,7 +59,7 @@ if ('IntersectionObserver' in window && 'animate' in Element.prototype) {
       revealObserver.unobserve(entry.target)
       if (motionPreference.matches) continue
 
-      const isProjectCard = entry.target.classList.contains('projects__row')
+      const isProjectCard = entry.target.matches('.projects__row, .projects__card')
       const animation = entry.target.animate(
         [
           { opacity: isProjectCard ? 0.15 : 0.65, transform: isProjectCard ? 'translateY(28px)' : 'translateY(8px)' },
@@ -75,7 +75,7 @@ if ('IntersectionObserver' in window && 'animate' in Element.prototype) {
     }
   }, { threshold: 0.08 })
 
-  document.querySelectorAll('.projects__row, .about__content-main, .about__content-skills, .contact .heading-sec')
+  document.querySelectorAll('.projects__row, .projects__card, .about__content-main, .about__content-skills, .contact .heading-sec')
     .forEach((element) => revealObserver.observe(element))
 
   motionPreference.addEventListener('change', () => {
@@ -85,3 +85,46 @@ if ('IntersectionObserver' in window && 'animate' in Element.prototype) {
     }
   })
 }
+
+// Case study clips loop like GIFs, but reduced motion pauses them and hands control to the visitor.
+const loopingClips = document.querySelectorAll('video[autoplay][loop]')
+function applyClipMotionPreference() {
+  for (const clip of loopingClips) {
+    clip.controls = motionPreference.matches
+    if (motionPreference.matches) clip.pause()
+    else clip.play().catch(() => {})
+  }
+}
+if (loopingClips.length) {
+  applyClipMotionPreference()
+  motionPreference.addEventListener('change', applyClipMotionPreference)
+}
+
+// "Copy email" is only offered where the Clipboard API exists; the mailto link always works.
+const copyEmailButton = document.querySelector('[data-copy-email]')
+const copyEmailStatus = document.querySelector('.contact__copy-status')
+if (copyEmailButton && navigator.clipboard) {
+  const idleLabel = copyEmailButton.textContent
+  let resetTimer
+  copyEmailButton.hidden = false
+  copyEmailButton.addEventListener('click', async () => {
+    clearTimeout(resetTimer)
+    try {
+      await navigator.clipboard.writeText(copyEmailButton.dataset.copyEmail)
+      copyEmailButton.textContent = 'Copied!'
+      copyEmailStatus.textContent = 'Email address copied'
+    } catch {
+      copyEmailButton.textContent = "Couldn't copy"
+      copyEmailStatus.textContent = `Couldn't copy. The address is ${copyEmailButton.dataset.copyEmail}`
+    }
+    resetTimer = setTimeout(() => {
+      copyEmailButton.textContent = idleLabel
+      copyEmailStatus.textContent = ''
+    }, 2500)
+  })
+}
+
+// Keep the footer copyright year current without editing every page each January.
+document.querySelectorAll('[data-current-year]').forEach((element) => {
+  element.textContent = new Date().getFullYear()
+})

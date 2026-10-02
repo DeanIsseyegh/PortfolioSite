@@ -4,27 +4,27 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Jump N' Bonk | Dean Isseyegh</title>
-    <meta name="description" content="Explore Jump N' Bonk, a game development project by Dean Isseyegh." />
+    <title>Jump N'Bonk | Dean Isseyegh</title>
+    <meta name="description" content="Explore Jump N'Bonk, a game development project by Dean Isseyegh." />
 
     <meta name="theme-color" content="#101719" />
     <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" />
     <link rel="canonical" href="https://deanthegamedev.com/project-3.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Dean Isseyegh" />
-    <meta property="og:title" content="Jump N' Bonk | Dean Isseyegh" />
-    <meta property="og:description" content="Explore Jump N' Bonk, a game development project by Dean Isseyegh." />
+    <meta property="og:title" content="Jump N'Bonk | Dean Isseyegh" />
+    <meta property="og:description" content="Explore Jump N'Bonk, a game development project by Dean Isseyegh." />
     <meta property="og:url" content="https://deanthegamedev.com/project-3.html" />
     <meta property="og:image" content="https://deanthegamedev.com/assets/png/social-preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Dean Isseyegh — Gameplay Programmer. Commercial games, solo projects and game jams." />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jump N' Bonk | Dean Isseyegh" />
-    <meta name="twitter:description" content="Explore Jump N' Bonk, a game development project by Dean Isseyegh." />
+    <meta name="twitter:title" content="Jump N'Bonk | Dean Isseyegh" />
+    <meta name="twitter:description" content="Explore Jump N'Bonk, a game development project by Dean Isseyegh." />
     <meta name="twitter:image" content="https://deanthegamedev.com/assets/png/social-preview.png" />
 
-    <link rel="stylesheet" href="css/style.css?v=4" />
+    <link rel="stylesheet" href="css/style.css?v=7" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -101,22 +101,30 @@
 </header>
 <section class="project-cs-hero">
     <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Jump N' Bonk</h1>
+        <a href="./index.html#projects" class="project-cs-hero__back">All projects</a>
+        <h1 class="heading-primary">Jump N'Bonk</h1>
         <div class="project-cs-hero__info">
             <p class="text-primary">
-                A 2d platform featuring a relaxing atmosphere and a boss fight.
+                A 2D platformer featuring a relaxing atmosphere and a boss fight.
             </p>
         </div>
         <div class="project-cs-hero__cta">
-            <a href="https://github.com/DeanIsseyegh/JumpNBonk" class="btn btn--bg" target="_blank">GitHub</a>
-            <a href="https://deaniss.itch.io/jump-nbonk" class="btn btn--bg" target="_blank">Itch io</a>
-            <a href="https://vimeo.com/manage/videos/676634169" class="btn btn--bg" target="_blank">Gameplay Video</a>
+            <a href="https://github.com/DeanIsseyegh/JumpNBonk" class="btn btn--bg" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://deaniss.itch.io/jump-nbonk" class="btn btn--bg" target="_blank" rel="noreferrer">itch.io</a>
+            <a href="https://vimeo.com/676634169" class="btn btn--bg" target="_blank" rel="noreferrer">Gameplay video</a>
         </div>
     </div>
 </section>
 <section class="project-details">
     <div class="main-container">
         <div class="project-details__content">
+            <dl class="project-facts">
+                <div class="project-facts__item"><dt>Role</dt><dd>Solo developer</dd></div>
+                <div class="project-facts__item"><dt>Team</dt><dd>Solo</dd></div>
+                <div class="project-facts__item"><dt>Timeframe</dt><dd>Nov 2021–Feb 2022</dd></div>
+                <div class="project-facts__item"><dt>Engine</dt><dd>Unity / C#</dd></div>
+                <div class="project-facts__item"><dt>Platforms</dt><dd>Web</dd></div>
+            </dl>
             <div class="project-details__showcase-img-cont">
                 <img
                         src="./assets/png/jumpnbonk/main3.png"
@@ -128,14 +136,14 @@
                 <div class="project-details__desc">
                     <h3 class="project-details__content-title">Key Learnings</h3>
                     <p class="project-details__desc-para">
-                        Developed as a learning project to get familiar with some Unity's 2d features.
+                        Developed as a learning project to get familiar with some of Unity's 2D features.
                     </p>
 
-                    <h3 class="project-details__content-title">State Design Pattern For A.I</h3>
+                    <h3 class="project-details__content-title">State Design Pattern for AI</h3>
                     <p class="project-details__desc-para">
                         Implemented the state design pattern for the end boss fight and its different phases. Have since
                         found
-                        this is by far my most preferred method for programming basic enemy A.I and even sometimes
+                        this is by far my most preferred method for programming basic enemy AI and even sometimes
                         player states.
                     </p>
 
@@ -149,52 +157,33 @@
                         While my first Unity game used a simple static camera, this game features a lot more movement
                         and a small
                         cutscene before the boss fight. Implemented blending between multiple virtual cameras.
-                        Cinemachine is now my go-to way to handle cameras Unity
+                        Cinemachine is now my go-to way to handle cameras in Unity.
                     </p>
 
-                    <h3 class="project-details__content-title">Unity 2d</h3>
+                    <h3 class="project-details__content-title">Unity 2D</h3>
                     <p class="project-details__desc-para">
-                        Used tilemaps, sprite animations along with Vector2s and the Unity 2d view to get familiar with
-                        the Unity2d suite.
+                        Used tilemaps, sprite animations along with Vector2s and the Unity 2D view to get familiar with
+                        the Unity 2D suite.
                     </p>
                 </div>
 
-<!--                <div class="project-details__tools-used">-->
-<!--                    <h3 class="project-details__content-title">Tools Used</h3>-->
-<!--                    <div class="skills">-->
-<!--                        <div class="skills__skill">HTML</div>-->
-<!--                        <div class="skills__skill">CSS</div>-->
-<!--                        <div class="skills__skill">JavaScript</div>-->
-<!--                        <div class="skills__skill">React</div>-->
-<!--                        <div class="skills__skill">SASS</div>-->
-<!--                        <div class="skills__skill">GIT</div>-->
-<!--                        <div class="skills__skill">Shopify</div>-->
-<!--                        <div class="skills__skill">Wordpress</div>-->
-<!--                        <div class="skills__skill">Google ADS</div>-->
-<!--                        <div class="skills__skill">Facebook Ads</div>-->
-<!--                        <div class="skills__skill">Android</div>-->
-<!--                        <div class="skills__skill">IOS</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="project-details__links">-->
-<!--                    <h3 class="project-details__content-title">See Live</h3>-->
-<!--                    <a-->
-<!--                            href="#"-->
-<!--                            class="btn btn&#45;&#45;med btn&#45;&#45;theme project-details__links-btn"-->
-<!--                            target="_blank"-->
-<!--                    >Live Link</a-->
-<!--                    >-->
-<!--                    <a-->
-<!--                            href="#"-->
-<!--                            class="btn btn&#45;&#45;med btn&#45;&#45;theme-inv project-details__links-btn"-->
-<!--                            target="_blank"-->
-<!--                    >Code Link</a-->
-<!--                    >-->
-<!--                </div>-->
             </div>
         </div>
     </div>
 </section>
+<nav class="project-nav" aria-label="More projects">
+    <div class="main-container project-nav__inner">
+        <a href="./project-2.html" class="project-nav__link project-nav__link--prev">
+            <span class="project-nav__label">Previous</span>
+            <span class="project-nav__title">Corgi, protecc!</span>
+        </a>
+        <a href="./index.html#projects" class="project-nav__all">All projects</a>
+        <a href="./project-4.html" class="project-nav__link project-nav__link--next">
+            <span class="project-nav__label">Next</span>
+            <span class="project-nav__title">Last Online: 2734 Days Ago</span>
+        </a>
+    </div>
+</nav>
 <footer class="main-footer">
     <div class="main-container">
         <div class="main-footer__upper">
@@ -203,34 +192,23 @@
                     <span>Social</span>
                 </h2>
                 <div class="main-footer__social-cont">
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dean-Isseyegh-57a54074/">
-                        <img
-                                class="main-footer__icon"
-                                src="./assets/png/linkedin-ico.png"
-                                alt="icon"
-                        />
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dean-Isseyegh-57a54074/" aria-label="LinkedIn">
+                        <svg class="main-footer__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/DeanIsseyegh">
-                        <img
-                                class="main-footer__icon"
-                                src="./assets/png/github-ico.png"
-                                alt="icon"
-                        />
+                    <a target="_blank" rel="noreferrer" href="https://github.com/DeanIsseyegh" aria-label="GitHub">
+                        <svg class="main-footer__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                     </a>
                 </div>
             </div>
             <div class="main-footer__row main-footer__row-2">
                 <h4 class="heading heading-sm text-lt">Dean Isseyegh</h4>
-                <!--                <p class="main-footer__short-desc">-->
-                <!--                    Lorem ipsum dolor sit amet consectetur adipisicing elit facilis-->
-                <!--                    tempora explicabo quae quod deserunt-->
-                <!--                </p>-->
+                <p class="main-footer__short-desc">Gameplay programmer · London</p>
+                <a class="main-footer__email" href="mailto:issdea@gmail.com">issdea@gmail.com</a>
             </div>
         </div>
-
-
+        <p class="main-footer__lower">&copy; <span data-current-year>2026</span> Dean Isseyegh</p>
     </div>
 </footer>
-<script src="./index.js?v=4"></script>
+<script src="./index.js?v=5"></script>
 </body>
 </html>

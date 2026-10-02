@@ -24,7 +24,7 @@
     <meta name="twitter:description" content="Explore Rogue Dungeon, a game development project by Dean Isseyegh." />
     <meta name="twitter:image" content="https://deanthegamedev.com/assets/png/social-preview.png" />
 
-    <link rel="stylesheet" href="css/style.css?v=4" />
+    <link rel="stylesheet" href="css/style.css?v=7" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -101,22 +101,30 @@
 </header>
 <section class="project-cs-hero">
     <div class="project-cs-hero__content">
+        <a href="./index.html#projects" class="project-cs-hero__back">All projects</a>
         <h1 class="heading-primary">Rogue Dungeon</h1>
         <div class="project-cs-hero__info">
             <p class="text-primary">
-                A Third Person Action RPG Roguelite with a focus on randomly generating the dungeon, enemies and
-                implementing an extending spell system with the use of Scriptable Objects. Built in Unity/C#.
+                A third-person action RPG roguelite with a focus on randomly generating the dungeon and enemies,
+                plus an extendable spell system built with Scriptable Objects. Built in Unity/C#.
             </p>
         </div>
         <div class="project-cs-hero__cta">
-            <a href="https://github.com/DeanIsseyegh/RogueDungeon" class="btn btn--bg" target="_blank">Github</a>
-            <a href="https://deaniss.itch.io/dungeon-rogue" class="btn btn--bg" target="_blank">Itch io</a>
+            <a href="https://github.com/DeanIsseyegh/RogueDungeon" class="btn btn--bg" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://deaniss.itch.io/dungeon-rogue" class="btn btn--bg" target="_blank" rel="noreferrer">itch.io</a>
         </div>
     </div>
 </section>
 <section class="project-details">
     <div class="main-container">
         <div class="project-details__content">
+            <dl class="project-facts">
+                <div class="project-facts__item"><dt>Role</dt><dd>Solo developer</dd></div>
+                <div class="project-facts__item"><dt>Team</dt><dd>Solo</dd></div>
+                <div class="project-facts__item"><dt>Timeframe</dt><dd>Feb–May 2022</dd></div>
+                <div class="project-facts__item"><dt>Engine</dt><dd>Unity / C#</dd></div>
+                <div class="project-facts__item"><dt>Platforms</dt><dd>Windows, macOS</dd></div>
+            </dl>
             <div class="project-details__showcase-img-cont">
                 <img
                         src="./assets/png/dungeon-rogue/main.png"
@@ -151,11 +159,12 @@
                             trait.
 
                         <div class="project-details__showcase-img-cont">
-                            <img
-                                    src="assets/gif/dungeon-rogue/spell-system.gif"
-                                    alt="Project Image"
+                            <video
+                                    src="assets/video/dungeon-rogue/spell-system.mp4"
                                     class="project-details__showcase-img"
-                            />
+                                    autoplay muted loop playsinline
+                                    aria-label="Rogue Dungeon spell system demo"
+                            ></video>
                             </p>
                             <br>
                             <br>
@@ -169,11 +178,12 @@
                         to get familiar with the basics of a popular algorithm.
 
                     <div class="project-details__showcase-img-cont">
-                        <img
-                                src="assets/gif/dungeon-rogue/decorated-floors-walls-trimmed-prop.gif"
-                                alt="Project Image"
+                        <video
+                                src="assets/video/dungeon-rogue/decorated-floors-walls-trimmed-prop.mp4"
                                 class="project-details__showcase-img"
-                        />
+                                autoplay muted loop playsinline
+                                aria-label="Dungeon floors and walls decorated with Wave Function Collapse"
+                        ></video>
                         </p>
                         <br>
                         <br>
@@ -185,7 +195,7 @@
                             <p class="project-details__desc-para">
                                 Initial dungeon generation was taking a while and slightly laggy. I used the built-in
                                 Unity profiler to identify the poorly performing code and managed to reduce dungeon generation
-                                from ~3.2 seconds to ~0.9 seconds/
+                                from ~3.2 seconds to ~0.9 seconds.
 
                             <p class="project-details__desc-para"><strong>Slow dungeon generation at ~3 seconds</strong></p>
                             <div class="project-details__showcase-img-cont">
@@ -215,53 +225,35 @@
                             <h3 class="project-details__content-title">Random Everything</h3>
                             <p class="project-details__desc-para">
                                 To make the game as replayable as possible, everything in a run is randomized. Enemies,
-                                Items and Spells!
+                                items and spells!
 
                             <div class="project-details__showcase-img-cont">
-                                <img
-                                        src="assets/gif/dungeon-rogue/assets-showcase.gif"
-                                        alt="Project Image"
+                                <video
+                                        src="assets/video/dungeon-rogue/assets-showcase.mp4"
                                         class="project-details__showcase-img"
-                                />
+                                        autoplay muted loop playsinline
+                                        aria-label="Rogue Dungeon assets showcase"
+                                ></video>
                             </div>
 
                             </div>
-<!--                            <div class="project-details__tools-used">-->
-<!--                                <h3 class="project-details__content-title">Tools Used</h3>-->
-<!--                                <div class="skills">-->
-<!--                                    <div class="skills__skill">HTML</div>-->
-<!--                                    <div class="skills__skill">CSS</div>-->
-<!--                                    <div class="skills__skill">JavaScript</div>-->
-<!--                                    <div class="skills__skill">React</div>-->
-<!--                                    <div class="skills__skill">SASS</div>-->
-<!--                                    <div class="skills__skill">GIT</div>-->
-<!--                                    <div class="skills__skill">Shopify</div>-->
-<!--                                    <div class="skills__skill">Wordpress</div>-->
-<!--                                    <div class="skills__skill">Google ADS</div>-->
-<!--                                    <div class="skills__skill">Facebook Ads</div>-->
-<!--                                    <div class="skills__skill">Android</div>-->
-<!--                                    <div class="skills__skill">IOS</div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="project-details__links">-->
-<!--                                <h3 class="project-details__content-title">See Live</h3>-->
-<!--                                <a-->
-<!--                                        href="#"-->
-<!--                                        class="btn btn&#45;&#45;med btn&#45;&#45;theme project-details__links-btn"-->
-<!--                                        target="_blank"-->
-<!--                                >Live Link</a-->
-<!--                                >-->
-<!--                                <a-->
-<!--                                        href="#"-->
-<!--                                        class="btn btn&#45;&#45;med btn&#45;&#45;theme-inv project-details__links-btn"-->
-<!--                                        target="_blank"-->
-<!--                                >Code Link</a-->
-<!--                                >-->
-<!--                            </div>-->
                         </div>
                     </div>
                 </div>
 </section>
+<nav class="project-nav" aria-label="More projects">
+    <div class="main-container project-nav__inner">
+        <a href="./project-5.html" class="project-nav__link project-nav__link--prev">
+            <span class="project-nav__label">Previous</span>
+            <span class="project-nav__title">Robo Rush</span>
+        </a>
+        <a href="./index.html#projects" class="project-nav__all">All projects</a>
+        <a href="./project-2.html" class="project-nav__link project-nav__link--next">
+            <span class="project-nav__label">Next</span>
+            <span class="project-nav__title">Corgi, protecc!</span>
+        </a>
+    </div>
+</nav>
 <footer class="main-footer">
     <div class="main-container">
         <div class="main-footer__upper">
@@ -270,34 +262,23 @@
                     <span>Social</span>
                 </h2>
                 <div class="main-footer__social-cont">
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dean-Isseyegh-57a54074/">
-                        <img
-                                class="main-footer__icon"
-                                src="./assets/png/linkedin-ico.png"
-                                alt="icon"
-                        />
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dean-Isseyegh-57a54074/" aria-label="LinkedIn">
+                        <svg class="main-footer__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/DeanIsseyegh">
-                        <img
-                                class="main-footer__icon"
-                                src="./assets/png/github-ico.png"
-                                alt="icon"
-                        />
+                    <a target="_blank" rel="noreferrer" href="https://github.com/DeanIsseyegh" aria-label="GitHub">
+                        <svg class="main-footer__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                     </a>
                 </div>
             </div>
             <div class="main-footer__row main-footer__row-2">
                 <h4 class="heading heading-sm text-lt">Dean Isseyegh</h4>
-<!--                <p class="main-footer__short-desc">-->
-<!--                    Lorem ipsum dolor sit amet consectetur adipisicing elit facilis-->
-<!--                    tempora explicabo quae quod deserunt-->
-<!--                </p>-->
+                <p class="main-footer__short-desc">Gameplay programmer · London</p>
+                <a class="main-footer__email" href="mailto:issdea@gmail.com">issdea@gmail.com</a>
             </div>
         </div>
-
-
+        <p class="main-footer__lower">&copy; <span data-current-year>2026</span> Dean Isseyegh</p>
     </div>
 </footer>
-<script src="./index.js?v=4"></script>
+<script src="./index.js?v=5"></script>
 </body>
 </html>
