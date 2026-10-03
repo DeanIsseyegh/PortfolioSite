@@ -7,6 +7,16 @@
   --muted: #afbfbd;
   --accent: #8fe5c2;
   --line: #2b3b3d;
+  --font-display: 'Space Grotesk', 'Source Sans Pro', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+// Headings get a display face; small labels and tags get a mono face for a subtle dev feel.
+h1, h2, h3, h4, .header__logo-sub, .project-nav__title { font-family: var(--font-display); letter-spacing: -.02em; }
+.home-hero__eyebrow, .home-hero__credits-label, .project-category, .project-label, .project-facts dt, .project-nav__label {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: .06em;
 }
 
 html { scroll-padding-top: 9rem; }
@@ -222,6 +232,30 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .project-cs-hero__content { padding: 16rem 0 8rem; }
 .project-cs-hero .heading-primary { text-transform: none; letter-spacing: -1.5px; line-height: 1.1; }
+// Each case study hero gets a pre-blurred shot of its game under a dark wash.
+.project-cs-hero {
+  isolation: isolate;
+  overflow: hidden;
+  &::before, &::after { content: ''; position: absolute; inset: 0; pointer-events: none; }
+  &::before { z-index: -2; background-position: center; background-size: cover; background-repeat: no-repeat; transform: scale(1.08); }
+  &::after {
+    z-index: -1;
+    background:
+      radial-gradient(ellipse at 50% 45%, rgba(16, 23, 25, .2), rgba(16, 23, 25, .65) 80%),
+      linear-gradient(180deg, rgba(16, 23, 25, .3) 0%, rgba(16, 23, 25, .5) 65%, var(--surface) 100%);
+  }
+  .heading-primary, .text-primary { text-shadow: 0 2px 20px rgba(8, 12, 13, .65); }
+  .text-primary { color: #e3ecea; }
+}
+// Brightness evens out the very light screenshots so the copy keeps its contrast.
+@each $hero, $brightness in (rogue-dungeon: 1, corgi-protecc: 1, jump-n-bonk: .6, last-online: 1, robo-rush: .85) {
+  .project-cs-hero--#{$hero}::before {
+    background-image: url('../assets/jpeg/hero/#{$hero}.jpg');
+    @if $brightness != 1 { filter: brightness($brightness) saturate(1.2); }
+  }
+}
+// Jump N'Bonk's colour sits in its ground layer, near the bottom of the shot.
+.project-cs-hero--jump-n-bonk::before { background-position: center 85%; }
 .project-cs-hero__back {
   display: flex;
   align-items: center;
