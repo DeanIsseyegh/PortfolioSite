@@ -69,7 +69,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .heading-sec__main::after { display: none; }
   &__info { margin-top: 2.4rem; max-width: 74rem; }
   .text-primary { color: var(--muted); font-size: 2rem; line-height: 1.75; }
-  &__cta { margin-top: 3rem; }
+  &__cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.6rem; margin-top: 3rem; }
   &__credits {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +135,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   &__content-title { margin-bottom: 2rem; }
   &__content-details-para { color: var(--muted); }
   &__content-details-para strong { color: var(--text); }
-  &__content-main > .btn { margin-top: 2rem; }
+  &__actions { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-top: 2rem; }
 }
 .skills__skill, .project-details__tools-used-item {
   background: #1d2c2f;
